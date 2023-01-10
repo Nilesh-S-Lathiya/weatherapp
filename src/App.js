@@ -1,13 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
+import React, { useState } from "react";
+import CurrentLocation from "./currentLocation";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className='title'>Weather app</div>
-      <Home /> 
-    </div>
+    <React.Fragment>
+      <div className="container">
+        <CurrentLocation />
+      </div>
+      <div className="footer-info">
+        <a href="#github">
+          Download Source Code
+        </a>{" "}
+        | Developed by{" "}
+        <a target="_blank" href="#">
+          Nilesh
+        </a>{" "}
+        | Powered by{" "}
+        <a target="_blank" href="">
+          ReactJS
+        </a>
+      </div>
+    </React.Fragment>
   );
 }
 
